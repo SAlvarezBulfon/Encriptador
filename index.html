@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Encriptemos!</title>
+      <!-- Font Awesome icons-->
+      <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+
+      <!--Linkeamos el normalizador-->
+      <link rel="stylesheet" href="CSS/normalizer.css">
+      <!--Agregamos el CSS-->
+      <link rel="stylesheet" href="CSS/estilos.css">
+
+</head>
+<body>
+    <header class="header">
+        <h1>Encriptador de texto</h1>
+        <p>Aquí podrás encriptar el mensaje que desees. Debes tomar en cuenta que no tomará mayúsculas ni números.</p>
+    </header>
+
+    <main>
+        <form class="container">
+            <div class="form">
+                <div>
+                    <label for="mensaje">¡Encripta tu mensaje!</label><br>
+                    <textarea class="textinput" placeholder="Ingrese el texto que desea" name="mensaje" id="mensaje" cols="80" rows="10"></textarea>
+                </div>
+                <div class="botones">
+                    <a class="btn" id="btn-en">Encriptar</a>
+                    <a class="btn" " id="btn-desen">Desencriptar</a>
+                    <a class="btn" id="btn-copiar"><i class="fa-solid fa-copy"></i></a>
+
+                </div>
+            </div>
+
+        </form>
+    </main>
+
+    <footer id="footer">
+               <!-- Redes Sociales-->
+                    <div class="redes">
+                        <h4>Redes Sociales</h4>
+                        <div class="botones-redes">
+                            <a class="btn-redes" href="https://github.com/SAlvarezBulfon" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a class="btn-redes" href="#!"><i class="fa-brands fa-behance"></i></i></a>
+                            <a class=" btn-redes " href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                            <a class="btn-redes" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+                        </div>
+                        <p>Sophia Alvarez</p>
+                    </div>
+    </footer>
+    
+    <script src="JS/encriptacion.js"></script>
+</body>
+</html>
