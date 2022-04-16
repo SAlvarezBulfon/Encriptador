@@ -252,3 +252,16 @@ label {
     text-transform: uppercase;
 }
 
+
+/*------------------------------
+            Media Queries
+--------------------------------*/
+
+@media (min-width: 375px) { 
+    .header{
+        padding: 5rem;
+    }
+    #footer{
+        height:20rem;
+    }
+ }
