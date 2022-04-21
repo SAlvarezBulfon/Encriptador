@@ -8,6 +8,11 @@
       <!-- Font Awesome icons-->
       <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
 
+      <!--Agregamos las fuentes-->  
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
       <!--Linkeamos el normalizador-->
       <link rel="stylesheet" href="CSS/normalizer.css">
       <!--Agregamos el CSS-->
@@ -15,42 +20,42 @@
 
 </head>
 <body>
-    <header class="header">
-        <h1>Encriptador de texto</h1>
-        <p>Aquí podrás encriptar el mensaje que desees. Debes tomar en cuenta que no tomará mayúsculas ni números.</p>
-    </header>
+        <div class="contenedor">
+            <div class="encriptador">
+                    <div class="left"></div>
+                    <div class="right">
+                            <h2>Encripta tu mensaje</h2>
 
-    <main>
-        <form class="container">
-            <div class="form">
-                <div>
-                    <label for="mensaje">¡Encripta tu mensaje!</label><br>
-                    <textarea class="textinput" placeholder="Ingrese el texto que desea" name="mensaje" id="mensaje" cols="90" rows="20"></textarea>
-                </div>
-                <div class="botones">
-                    <a class="btn" id="btn-en">Encriptar</a>
-                    <a class="btn" " id="btn-desen">Desencriptar</a>
-                    <a class="btn" id="btn-copiar"><i class="fa-solid fa-copy"></i></a>
+                            <label for="mensaje">Recuerda que no encripta números, caracteres especiales o mayúsculas.</label><br>
 
-                </div>
-            </div>
+                            <textarea class="field" placeholder="Ingresa el texto que deseas encriptar" name="mensaje" id="mensaje" cols="10" rows="20"></textarea>
+                    
+                     
+                    
 
-        </form>
-    </main>
-
-    <footer id="footer">
-               <!-- Redes Sociales-->
-                    <div class="redes">
-                        <h4>Redes Sociales</h4>
-                        <div class="botones-redes">
-                            <a class="btn-redes" href="https://github.com/SAlvarezBulfon" target="_blank"><i class="fa-brands fa-github"></i></a>
-                            <a class="btn-redes" href="#!"><i class="fa-brands fa-behance"></i></i></a>
-                            <a class=" btn-redes " href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                            <a class="btn-redes" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+                        <div class="botones">
+                            <a class="btn" id="btn-en">Encriptar</a>
+                            <a class="btn" id="btn-desen">Desencriptar</a>
+                            <a class="btn" id="btn-copiar"><i class="fa-solid fa-copy"></i></a>
                         </div>
-                        <p>Sophia Alvarez</p>
                     </div>
-    </footer>
+             </div>
+        </div>
+
+
+            <footer id="footer">
+                    <!-- Redes Sociales-->
+                            <div class="redes">
+                                <h4>Redes Sociales</h4>
+                                <div class="botones-redes">
+                                    <a class="btn-redes" href="https://github.com/SAlvarezBulfon" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                    <a class="btn-redes" href="#!"><i class="fa-brands fa-behance"></i></a>
+                                    <a class=" btn-redes " href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                                    <a class="btn-redes" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+                                </div>
+                                <p>Sophia Alvarez</p>
+                            </div>
+            </footer>
     
     <script src="JS/encriptacion.js"></script>
 </body>
