@@ -16,12 +16,12 @@ html {
 :root {
     --primario: #da1919fa;
     --secundario: #F3F4F5;
-    --terciario: #C8D5B9;
 }
 
 body{
     height: 100vh;
 	width: 100%;
+    background-color:#F3F4F5; ;
 }
 
 .contenedor{
