@@ -309,6 +309,7 @@ label{
 @media screen and (max-width: 880px) { 
     .encriptador{
         grid-template-columns: 1fr;
+        box-shadow: none;
     }
 
     .left{
