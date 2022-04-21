@@ -14,8 +14,8 @@ html {
 
 /*Globales*/
 :root {
-    --primario: #8FC0A9;
-    --secundario: #FAF3DD;
+    --primario: #da1919fa;
+    --secundario: #F3F4F5;
     --terciario: #C8D5B9;
 }
 
@@ -31,7 +31,7 @@ body{
     align-items: center;
     width: 100%;
     height: 100%;
-    padding: 2rem 10rem;
+    padding: 4rem 20rem;
 }
 
 .contenedor:after{
@@ -47,7 +47,7 @@ body{
 
 .encriptador{
     border-radius: 3rem;
-    max-width: 85rem;
+    max-width: 95rem;
     display:grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
@@ -59,7 +59,7 @@ body{
 
 .left{
     height: 100%;
-    background-image:  url(../img/Imagen.svg);
+    background-image:  url(../img/Fondo.avif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -70,7 +70,7 @@ body{
 .right{
     padding: 2.5rem;
 }
-h2{
+h1{
     position: relative;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
@@ -78,7 +78,7 @@ h2{
     color: #070607;
 }
 
-h2:after{
+h1:after{
     content: "";
     position: absolute;
     left:50%;
@@ -87,7 +87,7 @@ h2:after{
     height: 0.4rem;
     width: 5rem;
     border-radius: 2px;
-    background-color: #8FC0A9;
+    background-color: var(--primario);
 }
 
 
@@ -104,12 +104,18 @@ h2:after{
     padding-top: 2rem;
     padding-left: 2rem;
     font-size: 1.5rem;
-    color: #559477;
+    font-weight: bold;
+    color: #e25050;
+    box-shadow: 0 .2rem 2rem 0.5rem  #E7EBEA;
+}
+textarea{
+    outline:0px; 
+    -webkit-appearance:none;
 }
 
 label{
     font-size: 1.5rem;
-    color: #070607;
+    color:#070607;
 }
 
  /*------------------------------
@@ -121,13 +127,13 @@ label{
     align-items: center;
     justify-content: center;
     padding: 1rem 0.7rem;
-    border: 1px solid #8FC0A9;
+    border: 1px solid var(--primario);
     border-radius: 1rem;
     transition: all 0.2s ease-in;
     position: relative;
     overflow: hidden;
     font-size: 1.5rem;
-    color: #8FC0A9;
+    color: var(--primario);
     z-index: 1;
     margin:0.5rem;
    }
@@ -155,7 +161,7 @@ label{
     top: 180%;
     width: 160%;
     height: 190%;
-    background-color: #8FC0A9;
+    background-color: var(--primario);
     border-radius: 50%;
     display: block;
     transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
@@ -164,18 +170,18 @@ label{
    
    .btn:hover {
     color: #EFF6EE;
-    border: 1px solid #8FC0A9;
+    border: 1px solid var(--primario);
    }
    
    .btn:hover:before {
     top: -35%;
-    background-color: #8FC0A9;
+    background-color: var(--primario);
     transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
    }
    
    .btn:hover:after {
     top: -45%;
-    background-color: #8FC0A9;
+    background-color: var(--primario);
     transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
    }
 
@@ -236,7 +242,7 @@ label{
    }
    
    .btn-redes:hover {
-    color: #8FC0A9;
+    color: var(--primario);
     border: 1px solid #EFF6EE;
    }
    
@@ -269,7 +275,7 @@ label{
 --------------------------------*/
 #footer{
     padding: 2rem;
-    background-color:#8FC0A9; 
+    background-color:var(--primario); 
     display: flex;
     align-items: center;
     justify-content: center;
