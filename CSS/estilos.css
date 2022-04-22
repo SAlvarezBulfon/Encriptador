@@ -21,7 +21,7 @@ html {
 body{
     height: 100vh;
 	width: 100%;
-    background-color:#F3F4F5; ;
+    background-color:#F3F4F5; 
 }
 
 .contenedor{
@@ -320,3 +320,10 @@ label{
         margin-top: 2.7rem;
     }
  }
+ 
+  @media (max-height:800px ) { 
+    .contenedor{
+        width: 100%;
+        height:auto;
+    }
+   }
